@@ -18,3 +18,16 @@ const cars = [
     }
   }
 ];
+
+function useCars(car) {
+  return [
+    car.name,
+    function () {
+      console.log(car.model);
+    }
+  ];
+}
+
+export default cars;
+
+export { useCars };
